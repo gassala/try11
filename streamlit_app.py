@@ -1,5 +1,11 @@
 import streamlit as st
-pip install streamlit-option-menu
+from streamlit_option_menu import option_menu
+# 1. as sidebar menu
+with st.sidebar:
+    selected = option_menu("Main Menu", ["Circumference", 'Area', 'Volume'], 
+        icons=['round', 'square', 'box'], menu_icon="cast", default_index=1)
+    selected
+
 
 st.title('Area Calculator')
 
