@@ -1,4 +1,5 @@
 import streamlit as st
+pip install streamlit-option-menu
 
 st.title('Area Calculator')
 
